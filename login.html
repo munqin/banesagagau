@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Prishtina Ime</title>
+	<title>Login form</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="/css/login.css">
 
@@ -26,8 +28,10 @@
 
 		<ul class="navbar">
 			<li><a href="index.html">Ballina</a></li>
+			<li><a href="slider.html">Qyteti</a></li>
 			<li><a href="historia.html">Historia</a></li>
 			<li><a href="festivalet.html">Festivalet</a></li>
+			<li><a href="news.html">Lajmet</a></li>
 			<li><a href="login.html">Na Permirsoni!</a></li>
 			
 
@@ -68,11 +72,16 @@
                                         <input type="submit" value="Register" class="btn"/>
                                     </a>
                                 </div>
-                                 
+								<div class="grid-item">
+									<a href="./admin.html">
+										<input type="submit" value="Admin" class="btn">
+									</a>
+								</div>
+								<input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
                               </div>
                               
        
-        <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+     
                         </div>
                    
                 </div>
@@ -105,16 +114,16 @@
 				<div class="list">
 					<h4>Lidhja</h4>
 					<div class="social">
-						<a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
-						
-						
+						<a href="https://www.facebook.com/komunaprishtine/" target="_blank"><i class='bx bxl-facebook'></i></a>
+						<a href="https://www.instagram.com/komunaprishtine/" target="_blank"><i class='bx bxl-instagram'></i></a>
+						<a href="https://twitter.com/KPrishtines" target="_blank"><i class='bx bxl-twitter'></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="end-text">
-			<p>Erion Gashi, Olti Ahmeti</p>
+			<p>Erion Gashi, Olti Ahmeti, Velsa Kamberi</p>
 		</div>
 	</section>
 
@@ -147,7 +156,7 @@
 		}
 		else
 		{
-	alert('Thank You for Login & You are Redirecting to KB-Peja');
+	alert('Thank You for Login & You are Redirecting to Home page');
   //Redirecting to other page or webste code or you can set your own html page.
        window.location = "index.html";
 			}

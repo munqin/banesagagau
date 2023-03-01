@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Prishtina Ime</title>
+	<title>Regjister form</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <!---->
     <link rel="stylesheet" href="/css/Register.css">
@@ -30,11 +30,11 @@
 
 		<ul class="navbar">
 			<li><a href="index.html">Ballina</a></li>
+            <li><a href="slider.html">Qyteti</a></li>
 			<li><a href="historia.html">Historia</a></li>
 			<li><a href="festivalet.html">Festivalet</a></li>
+            <li><a href="news.html">Lajmet</a></li>
 			<li><a href="login.html">Na Permirsoni!</a></li>
-			
-
 		</ul>
 	</header>
 
@@ -126,6 +126,9 @@ form.addEventListener('submit',function(e){
         showSuccess(password);
     }
     if(password2.value===''){
+        showError(password2,'Password is required');
+    }
+    else if(!(password2.value===password.value)){
         showError(password2,'confirm password is required');
     }
     else{
@@ -140,7 +143,7 @@ form.addEventListener('submit',function(e){
 
 
 </script>
-
+    <script src="js/indexscript.js"></script>
     <script src="app.js"></script>
     
 

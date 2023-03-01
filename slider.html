@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qyteti Ynë</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/slider.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="/Foto/logo-removebg-preview.png" alt="" height="100">
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+      <li><a href="index.html">Ballina</a></li>
+			<li><a href="slider.html">Qyteti</a></li>
+			<li><a href="historia.html">Historia</a></li>
+			<li><a href="festivalet.html">Festivalet</a></li>
+			<li><a href="news.html">Lajmet</a></li>
+			<li><a href="login.html">Na Permirsoni!</a></li>
+        </ul>
+</header>
+
+        <section class="destination" id="destination">
+            <div class="title">
+                <h2>Qyteti ynë</h2>
+            </div>
+
+            <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlidesfade">
+      <img src="/Foto/bus.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlidesfade">
+      <img src="/Foto/fadil-vokrri.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlidesfade">
+      <img src="/Foto/IMG-8230.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlidesfade">
+        <img src="/Foto/m.png" style="width:100%">
+        <div class="text"></div>
+    </div>
+  
+    <div class="mySlidesfade">
+        <img src="/Foto/pr.png" style="width:100%">
+        <div class="text"></div>
+    </div>
+
+    <div class="mySlidesfade">
+        <img src="/Foto/Prishtina_traffic.png" style="width:100%">
+        <div class="text"></div>
+    </div>
+
+    <div class="mySlidesfade">
+        <img src="/Foto/Pristina-night.png" style="width:100%">
+        <div class="text"></div>
+    </div>
+    <!-- Next and previous buttons -->
+   
+  </div>
+  <br>
+
+    </section>
+    
+
+    <section id="contact">
+		<div class="footer">
+			<div class="main">
+				
+
+
+				<div class="list">
+					<h4>Kontakti</h4>
+					<ul>
+						<li><a href="#">Prishtina	</a></li>
+						<li><a href="#">049123456</a></li>
+						
+					</ul>
+				</div>
+
+				<div class="list">
+					<h4>Lidhja</h4>
+					<div class="social">
+
+						<a href="https://www.facebook.com/komunaprishtine/" target="_blank"><i class='bx bxl-facebook'></i></a>
+						<a href="https://www.instagram.com/komunaprishtine/" target="_blank"><i class='bx bxl-instagram'></i></a>
+						<a href="https://twitter.com/KPrishtines" target="_blank"><i class='bx bxl-twitter'></i></a>
+		
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="end-text">
+			<p>Erion Gashi, Olti Ahmeti, Velsa Kamberi</p>
+		</div>
+	</section>
+
+   
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlidesfade");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <script type="text/javascript" src="js/indexscript.js"></script>
+</body>
+</html>
